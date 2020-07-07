@@ -8,6 +8,12 @@ When I first saw the one page version of Blaster (3.5, I think), I was amazed at
 
 Fundamentally, what is needed for a role playing game is just a framework within which to adjudicate actions - a system of quantifying how good characters are expected to be at certain things, and whether or not (or the degree to which) they succeed at individual attempts of these things. Only Human attempts to provide this.
 
+## Structure
+
+At the moment there are a couple of parts to this repo. The actual rules are currently only stored in only-human.tex, which represents version 0.2.2 of the rules, and is hopefully a complete game.
+
+rules.md is a growing documentation of what will hopefully, eventually, be the actual rules of the game, as separated from formatting and fluffy stuff that might appear in the LaTeX document. It is not yet a full game, and represents what will eventually become version 0.3.X, so is not necessarially aligned with only-human.tex or the current release.
+
 ## Compiling
 
 I recommend compiling the rules with `xelatex`, and you will need the font Economica installed.
