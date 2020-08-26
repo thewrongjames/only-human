@@ -95,19 +95,54 @@ Characters have a **health state**, and are either **stable** or **unstable**. I
 
 ## Still Human
 
-Still Human is a sci-fi implementation of the ONLY HUMAN framework, that is, it provides statistics for armour, weapons, and other items, as well as **roles** and the vaguest hint of setting for the GM to build upon.
+Still Human is a sci-fi implementation of the ONLY HUMAN framework, that is, it provides statistics for armour, weapons, other items, **roles**, and (through these) the vaguest hint of setting for the GM to build upon.
 
-Still Human is designed to run games for teams of characters sent on missions in reasonably hard sci-fi near-ish future settings.
+Still Human is designed to run games for teams of highly trained or experienced characters that are sent on, or somehow end up entangled in, various missions in reasonably hard sci-fi near-ish future settings.
 
-This should not be the only implementation, style, or setting that ONLY HUMAN is able to be played in. Hopefully this section serves to also provide an example of how this game can actually be implemented into something generally playable, in many contexts.
+This should not be the only implementation, style, or setting that ONLY HUMAN is able to be played in. Hopefully this section serves to also provide an example of how this game can actually be implemented into something generally playable, in any context.
 
 ### Equipment
 
-### Team Building
+| Armour | Absorption | Description / Effects |
+|:------ | ----------:|:--------------------- |
+| Normal Clothes | 0 | Stylish _and_ practical |
+| Space Suit | 2 | A surprisingly compact vacuum rated environmental suit. Two hot-swappable tanks (that passively re-fill in atmosphere) together one hour of oxygen each. If the suit absorbs any damage it is torn, and must be repaired before it will be vacuum worthy. A character wearing a space suit is **restricted**. |
+| Reinforced Space Suit | 3 | A military grade space suit. The same as a space suit, except it is only torn if its wearer is hit with an attack and it cannot absorb all the **impact**. |
+| Combat Armour | 3 | Tactical body armour. |
+| Combat Carapace | 4 | Heavy duty body armour. A character wearing combat carapace is **restricted**. |
 
-#### Roles
+| Weapon | Type | Range | Modifier |
+|:------ |:---- | -----:| --------:|
+| Combat Knife | Melee | 2m | +1 |
+| Improvised Weapon | Melee | 2m | -1 |
+| Shock Rod | Melee | 2m | +2 |
+| Assault Rifle | Ranged | 400m | +3 |
+| Auto Pistol | Ranged | 50m | +1 |
+| Combat Knife | Ranged | 10m | +0 |
+| Improvised Weapon | Ranged | 10m | -4 |
 
-#### Requirements and Requisitioning
+| Other Items | Description / Effects |
+|:----------- |:--------------------- |
+| Short Range Communicator | A small radio device. Provides encrypted communication with selected short range communicators configured to allow it within 20km. |
+| Long Range Communicator | A backpack sized radio device that provides encrypted communication to any equipment configured to receive it within 40,000km. |
+| Pad | A smartphone sized, portable, touch screen computer. |
+| Navigator | A small attachment to a pad that uses known maps, available satellite data, and computer vision to attempt to inform the user of their position at all times. |
+| Scanner | A small attachment to a pad that allows various kinds of scanning. Where relevant, a scanner gives a `+2` modifier to _Investigation_ **tests**. |
+| Medical Kit | A brief-case sized box containing various medical supplies. Where relevant, a medical kit gives a `+2` modifier to _Medicine_ **tests**. Additionally, the medical kit contains 5 stim-shots, that can be used to rouse an unconscious character to the seriously wounded **health state**, and a defibrillator that can be used to revive a dead character to the seriously wounded **health state** if they died in the last minute from causes that can be resolved by restarting their heart. |
+| Engineering Kit | A vacuum rated toolbox full of various equipment for dealing with the tech a space-faring engineer might expect to encounter. Where relevant, an engineering kit gives a `+2` modifier to _Technology_ **tests**. Additionally, the engineering kit contains 5 patches that can be used to repair tears in space suits. |
+
+### Roles
+
+Still Human adds one additional **skill** to the game: _Piloting_, a `DEX` + `INT` **skill**. In addition to the benefits of **roles** outlined in the character creation section, with the agreement of the GM a character that selects one of the following roles may also take the corresponding piece(s) of equipment, and all characters may take Normal Clothes, a Space Suit, a Short Range Communicator, and a Pad.
+
+| Role | Skills | Equipment |
+|:---- |:------ |:--------- |
+| Pilot | _Piloting_, _Investigation_ | Navigator |
+| Communications | _Technology_, _Insight_, _Persuasion_ | Long Range Communicator |
+| Security | _Ranged attacking_, _Melee attacking_, _Toughness_ | Reinforced Space Suit, Assault Rifle, Shock Rod |
+| Engineering | _Slight of hand_, _Piloting_, _Technology_ | Engineering Kit |
+| Medical | _Slight of hand_, _Medicine_ | Medical Kit |
+| Science | _Technology_, _Investigation_ | Scanner |
 
 ## GM Guide
 
