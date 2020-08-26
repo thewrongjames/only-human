@@ -1,24 +1,28 @@
-# Only Human Rules
+# ONLY HUMAN
 
 Version 0.3.0
 
-This document is designed to outline the rules of the game, without the styling and fluff that might appear in a more polished document. It is not necessarily the nicest way to be introduced to the game, but it should clearly outline how to play and run it.
+This file is designed to outline the rules of the game, without the styling that might appear in a more polished document.
 
-Only Human is inspired by the [Dead Simple RPG](https://deadsimplerpg.wordpress.com/about/) games.
+ONLY HUMAN is inspired by the [Dead Simple RPG](https://deadsimplerpg.wordpress.com/about/) games.
 
 ## Basic Rules
 
-Only Human is a simple tabletop role playing game system, for when you don't need a built in setting, an entire magic / technology system, and godlike progression. It requires a game master (GM) to control the world and non-player characters (NPCs), and at least one player to control the player character(s) (PCs).
+ONLY HUMAN is a simple tabletop role playing game framework, for when you don't need a built in setting, an entire magic / technology system, and godlike progression. It requires a game master (GM) to control the world / non-player characters (NPCs), and at least one player to control the player character(s) (PCs).
 
-This section contains the rules for playing the game, as they pertain to the players. The GM will also likely use some of these rules, but their interactions are outlined further in the [GM Guide](#GM-Guide).
+This section contains the basic rules for playing the game, as they pertain to the players. The GM will also likely use some of these rules, but their interactions are outlined further in the [GM Guide](#GM-Guide).
 
-Before playing everyone should have access to at least one d20 (d20s are 20 sided dice), as well as some paper, pencils and erasers to record character details and notes. The GM should have an interesting story or scenario for the player(s) to encounter, and outlines of any mechanics that they expect to use during the game.
+An actual implementation of this framework requires the details of armour, weapons, items, and roles. The [Still Human](#Still-Human) section of these rules provide an example of that.
+
+Before playing each player and the GM should have access to at least one d20 (d20s are 20 sided dice), as well as some paper, pencils and erasers to record character details and notes. The GM should have an interesting story or scenario for the player(s) to encounter, and outlines of any mechanics that they expect to use during the game.
 
 ### Character Creation
 
-Before playing the game, the players each create a character. When doing so, players must allocate ten points between the four **stats** that characters have: Dexterity (`DEX`), Intelligence (`INT`), Strength(`STR`), and Spirit (`SPT`). Each stat must have between one and four points.
+Before playing the game, the players each create a character. When doing so, players must allocate `12` points between the four **stats** that characters have: Dexterity (`DEX`), Intelligence (`INT`), Strength(`STR`), and Spirit (`SPT`). Each stat may be allocated at most `6` points.
 
-A **skill** is a particular activity or aspect that a character can have different levels of **proficiency** with in. **Skills** are each associated with two **stats**. The list below details some examples of **skills**, but it is not exhaustive: you can add any number of other **skills** to the game pending only the agreement of the GM, and the association of the **skill** with a pair of **stats**.
+Players must additionally allocate `16` points between **skills**. The GM may also provide you with the option to pick a **role**, which will confer an additional `4` points that must be allocated to a particular set of **skills**. No skill can be allocated more than `4` points.
+
+Each **skill** is associated with two **stats**. The list below details some examples of **skills**, but it is not exhaustive: you can add any number of other **skills** to the game pending only the agreement of the GM, and the association of the **skill** with a pair of **stats**.
 
 - `DEX` + `DEX`: *Agility*, *Slight of hand*
 - `DEX` + `INT`: *Ranged attacking*
@@ -31,51 +35,94 @@ A **skill** is a particular activity or aspect that a character can have differe
 - `STR` + `SPT`: *Toughness*, *Intimidation*
 - `SPT` + `SPT`: *Persuasion*
 
-Characters begin experienced in one **skill**, and trained in two others; they are considered unfamiliar with everything else. This is their level of **proficiency**. The levels of **proficiency** confer modifiers, the use of these modifiers will be explained in the [Tests](#Tests) section later.
+The points allocated to **stats** and **skills** are used to create modifiers that are explained in the [Tests](#Tests) section of these rules.
 
-| Level of **proficiency** | Modifier |
-| ------------------------ | --------:|
-| Unfamiliar               |     `+0` |
-| Trained                  |     `+1` |
-| Experienced              |     `+2` |
+Keep in mind that these numbers should not completely describe your character. Think about their personality, what they want, what they need (but might not know they need), and how they know the other characters in the group. Have secrets for your character, but want them to be discovered.
 
 ### Playing the Game
 
 #### Tests
 
-When a character tries something that has a risk of failure, and a chance of success, they take a **test**. A **test** must always be associated with a **skill**, which in turn must always be associated with two **stats**. The controlling player of the character in question, or the GM for NPCs, rolls a d20. The points value of each of the character's **stats** that relate to the relevant **skill**, plus the character's **proficiency** modifier for the **skill** are added to the number rolled, and the total is the result of the **test**.
+When a character tries something that has a risk of failure, and a chance of success, the GM must adjudicate the outcome. A common way to do so is to have the character take a **test**. A **test** must always be associated with a **skill**, which in turn must always be associated with two **stats**. The controlling player of the character in question, or the GM for NPCs, rolls a d20 and adds the character's **modifier** in the **skill**.
 
-For every **test** taken the GM should choose a difficulty class (DC) that corresponds to the difficulty of the task at hand. A higher DC means the task is more difficult.
+To find a character's **skill** **modifier** take the average of their points in the associated **stats** (which is just the value of the **stat** if the **skill** is associated with the same **stat** twice), rounding down, and then add their points in the associated skill. When these rules reference a **skill** in a numerical context, they are referring to this **modifier**.
 
-If the result of the **test** is at least as high as the DC then the **test** is a success, otherwise it is a failure.
+For every **test** taken the GM should choose a **difficulty** that corresponds to the challenge of the task at hand, with a higher **difficulty** indicating a harder to complete task. The [GM Guide](#GM-Guide) provides advice on [setting difficulties](#Setting-Difficulties).
+
+If the result of the **test** is at least as high as the **difficulty** then the **test** is a success, otherwise it is a failure.
 
 #### Contests
 
-**Contests** are a special kind of **test** for when two or more characters are simultaneously attempting tasks that come into conflict. In a **context** the conflicting characters each take a **test** in the **skill** relevant to the task they are attempting. The character with the highest result succeeds, and all the other characters (perhaps to varying degrees, fail).
+**Contests** are a special kind of **test** for when two or more characters are simultaneously attempting tasks that come into conflict. In a **contest** the conflicting characters each take a **test** in the **skill** relevant to the task they are attempting. The character(s) with the highest result succeeds, and all the other characters (perhaps to varying degrees) fail. The GM adjudicates the outcome of any ties.
 
 #### Turns
 
-When things get tense characters start taking turns. The turn order, and whether or not they overlap, is up to the GM. Everyone taking a turn represents about 10 seconds of time. During a turn, characters may move, and once per turn (possibly during that movement) they may take an ​**action**. Characters may talk at any point during turns, but the GM should to ensure that they don’t communicate more than is reasonable in the amount of time that has elapsed.
+When things get tense characters start taking turns. The turn order, and whether or not they overlap, is up to the GM. Everyone taking a turn represents about `10` seconds of time.
+
+During a turn, characters may move, and once per turn (possibly during that movement) they may take an ​**action**. An **action** may take the form of **attacking**, **running**, **readying**, interacting substantially with an object, attempting to **stabilise** a character, or doing anything else that GM deems worthy of requiring an action.
+
+Characters may talk at any point during turns, but the GM should to ensure that they don’t communicate more than is reasonable in the amount of time that has elapsed.
 
 #### Moving
 
-When characters make a move, they can move in a path of up to `10 + (2 × Speed)` metres, where _Speed_ is the modifier the character would add to a _Speed_ **test**. If a character is climbing, trying to move stealthily, wearing or carrying something bulky, or moving over difficult terrain, then they are considered **encumbered** can only move in a path of up to `10 + Speed` metres.
+When characters make a move, they can move in a path of up to `10 + (2 × Speed)` metres in length. If a character is climbing, swimming, trying to move stealthily, wearing or carrying something bulky, or moving over difficult terrain, then they are considered to be **restricted**. The distance a character moves whilst **restricted** counts twice against their movement.
 
-#### Actions
+#### Attacking
 
-As an action characters may attack, dash, restrain, shove, hold an action, or interact substantially with an object.
+A character may spend their **action** making an attack, providing the target of their attack is within range of the weapon they are using, and there is nothing physically preventing the attack (such as a wall). If a character cannot see their target, they must declare where they are attacking, if there is nothing there their attack fails, but otherwise it continues as normal. To make an attack characters make the relevant of either a _​Ranged attacking​_ or a _​Melee attacking​​_ **test**, adding their weapon modifier to their result. The **difficulty** for this **test** is `10 + target DEX + cover`, where `cover` is `3` if half or more of the target is obscured from the attacker and `6` if more than three quarters of the target is obscured from the attacker.
 
-If a character spends their **action** making an attack, providing the target of their attack is within range of the weapon they are using, and there is nothing physically preventing the attack (such as a wall). If a character cannot see their target, they must declare where they are attacking, if there is nothing there their attack fails, but otherwise it continues as normal. To make an attack characters make the relevant of either a _​Ranged attacking​_ or a _​Melee attacking​​_ **test**, adding their weapon modifier to their result. The DC for this **test** is `10 + target DEX`, but light cover applies a `-2` penalty, and heavy cover applies a `-4` penalty.
+If the attacker fails this **test** nothing further happens and the **action** is complete. Otherwise, the attack has an **impact** of the amount they exceeded their attack **test** by (possibly zero), minus the **absorption** of any armour the target is wearing. The target must then take a _Toughness_ **test**, with a **difficulty** of `15 + impact`. If the target fails this **test** they are **injured** and become **unstable**. If they fail by a margin of `10` or more they are **injured** twice, and if they fail by `15` or more they are injured three times.
 
-If the attacker fails this **test** nothing further happens and the **action** is complete. Otherwise, the attack has an **impact** of the amount they exceeded their attack **test** by (possibly zero), minus the absorption of any armour the target is wearing. The target must then take a _Toughness_ **test**, with a DC of `15 + impact`. If the target fails this **test** they are **injured** and become **unstable**. If they fail by a margin of `10` or more they are **injured** twice.
+#### Running
+
+If a character uses their action to **run** they may double their movement for the turn.
+
+#### Readying
+
+If a character uses their action to **ready** they must specify a condition and an **action** that their character could make - in sufficient detail to satisfy the GM. If the specified condition occurs before they next take a turn, their character immediately takes the specified action.
 
 #### Injury
 
+Characters have a **health state**, and are either **stable** or **unstable**. If a character is **injured** or they have been **unstable** in the same health state for more than half an hour, they drop to the next health state down the table. To begin with most characters are assumed to be **stable** in a normal **health state**. A successful _Medicine_ test of **difficulty** `15` will **stabilise** a character, but true recovery can require days, or perhaps specialised equipment (at the discretion of the GM).
+
+| Health State | Effect |
+| ------------ | ------ |
+| Normal | The character is feeling fine. |
+| Wounded | The character is hurt, they suffer a `-2` penalty to all **tests** |
+| Seriously Wounded | The character is really hurt, they suffer a `-4` penalty to **tests** and are always considered **restricted**. |
+| Incapacitated | The character is unconscious (or effectively unconscious), they cannot voluntarily do anything and can easily be captured or killed. You no longer add this character's `DEX` to the **difficulty** of the **test** to attack them. |
+| Dead | The character is dead, Jim. |
+
 ## Still Human
+
+Still Human is a sci-fi implementation of the ONLY HUMAN framework, that is, it provides statistics for armour, weapons, and other items, as well as **roles** and the vaguest hint of setting for the GM to build upon.
+
+Still Human is designed to run games for teams of characters sent on missions in reasonably hard sci-fi near-ish future settings.
+
+This should not be the only implementation, style, or setting that ONLY HUMAN is able to be played in. Hopefully this section serves to also provide an example of how this game can actually be implemented into something generally playable, in many contexts.
+
+### Equipment
+
+### Team Building
+
+#### Roles
+
+#### Requirements and Requisitioning
 
 ## GM Guide
 
-### Setting DCs
+### Setting Difficulties
+
+When setting **difficulties** generally keep in mind these difficulty levels:
+
+| Difficulty             | **difficulty** |
+|:---------------------- | --------------:|
+| Very Easy              |              5 |
+| Easy                   |             10 |
+| Moderately Complicated |             15 |
+| Difficult              |             20 |
+| Very Difficult         |             25 |
+| Practically Impossible |             30 |
 
 ### Adjudicating Complex Tasks
 
@@ -83,14 +130,22 @@ If the attacker fails this **test** nothing further happens and the **action** i
 
 ## Definitions
 
-Some words or phrases in the above rules are written in bold. This means that they have a particular definition within the game that is more specific than their general definition. Whilst they are explained the first time they appear, their meaning is detailed again here for ease of reference.
+Some words or phrases in the above rules are written in bold. This means that they have a particular definition within the game that is more specific than their general English definition. Whilst they are explained the first time they appear, their meaning is detailed again here for ease of reference.
 
-- **Stats**: Definition
-- **Skills**: Definition
-- **Proficiency**: Definition
+- **Stat**: Definition
+- **Skill**: Definition
+- **Role**: Definition
+- **Modifier**: Definition
+- **Difficulty**: Definition
 - **Test**: Definition
-- **Encumbered**: Definition
+- **Restricted**: Definition
+- **Action**: Definition
+- **Attacking**: Definition
+- **Running**: Definition
+- **Readying**: Definition
 - **Impact**: Definition
+- **Absorption**: Definition
 - **Injured**: Definition
+- **Health State**: Definition
 - **Unstable**: Definition
 - **Stable**: Definition
