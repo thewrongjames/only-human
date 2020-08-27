@@ -8,7 +8,7 @@ ONLY HUMAN is inspired by the [Dead Simple RPG](https://deadsimplerpg.wordpress.
 
 ## Basic Rules
 
-ONLY HUMAN is a simple tabletop role playing game framework, for when you don't need a built in setting, an entire magic / technology system, and godlike progression. It requires a game master (GM) to control the world / non-player characters (NPCs), and at least one player to control the player character(s) (PCs).
+ONLY HUMAN is a simple tabletop role playing game framework, for when you don't need a built in setting, an entire magic / technology system, and godlike progression. It requires a game master (GM) to control the world / non-player characters (NPCs) and to adjudicate the outcomes of player actions, and at least one player to control the player character(s) (PCs).
 
 This section contains the basic rules for playing the game, as they pertain to the players. The GM will also likely use some of these rules, but their interactions are outlined further in the [GM Guide](#GM-Guide).
 
@@ -18,7 +18,7 @@ Before playing each player and the GM should have access to at least one d20 (d2
 
 ### Character Creation
 
-Before playing the game, the players each create a character. When doing so, players must allocate `12` points between the four **stats** that characters have: Dexterity (`DEX`), Intelligence (`INT`), Strength(`STR`), and Spirit (`SPT`). Each stat may be allocated at most `6` points.
+Before playing the game, the players each create a character. When doing so, players must allocate `12` points between the four **stats** that characters have: Dexterity (`DEX`), Intelligence (`INT`), Strength(`STR`), and Will (`WIL`). Each stat may be allocated at most `6` points.
 
 Players must additionally allocate `16` points between **skills**. The GM may also provide you with the option to pick a **role**, which will confer an additional `4` points that must be allocated to a particular set of **skills**. No skill can be allocated more than `4` points.
 
@@ -27,13 +27,13 @@ Each **skill** is associated with two **stats**. The list below details some exa
 - `DEX` + `DEX`: *Agility*, *Slight of hand*
 - `DEX` + `INT`: *Ranged attacking*
 - `DEX` + `STR`: *Speed*
-- `DEX` + `SPT`: *Stealth*
+- `DEX` + `WIL`: *Stealth*
 - `INT` + `INT`: *Technology*, *Medicine*
 - `INT` + `STR`: *Melee attacking*
-- `INT` + `SPT`: *Investigation*, *Insight*
+- `INT` + `WIL`: *Investigation*, *Insight*
 - `STR` + `STR`: *Athletics*
-- `STR` + `SPT`: *Toughness*, *Intimidation*
-- `SPT` + `SPT`: *Persuasion*
+- `STR` + `WIL`: *Toughness*, *Intimidation*
+- `WIL` + `WIL`: *Persuasion*
 
 The points allocated to **stats** and **skills** are used to create modifiers that are explained in the [Tests](#Tests) section of these rules.
 
@@ -146,6 +146,8 @@ Still Human adds one additional **skill** to the game: _Piloting_, a `DEX` + `IN
 
 ## GM Guide
 
+ONLY HUMAN is rather rules light. This is quite intentional, and is based on the idea that the fundamental core of an RPG is incredibly simple, and can benefit from being more exposed for GMs to tinker with. However, this freedom does also come with responsibility. Hence, this sections exists to provide various tips to try to help GMs through this.
+
 ### Setting Difficulties
 
 When setting **difficulties** generally keep in mind these difficulty levels:
@@ -159,18 +161,34 @@ When setting **difficulties** generally keep in mind these difficulty levels:
 | Very Difficult         |             25 |
 | Practically Impossible |             30 |
 
+Unless you are intentionally trying to hide the difficulty of the task, if a player attempts a task that is impossible to fail, or impossible to successfully complete, there is no need for a **test**. Simply narrate the outcome to the players.
+
 ### Adjudicating Complex Tasks
+
+ONLY HUMAN does not provide specific rules for adjudicating everything a player may wish to try. So, when dealing with non-standard tasks, attempt to find a way to distil them down into one or more core difficulties (parts of the task with a risk of failure and a chance of success) that can be related to **skills** (whether on the given **skills** table or not).
+
+Once you know what **skills** are involved, try to gauge the difficulty of these components of the task, work out if they happen in an order or at the same time, and work out what success or failure for individual parts or combinations of individual parts looks like. Finally, with these ideas in mind, have the character take **tests** based on the established skills and difficulties, in the established order, and provide the established outcomes.
+
+In practice, this does not need to be dealt with remotely as formally, but that structure forms a guideline of one way to react to players attempting complicated tasks.
+
+### Turns
+
+ONLY HUMAN does not prescribe a method for determining the order of turns, whether there even is an order to turns, and whether or not turns can overlap. This should generally be decided on a case by cases basis, as there is no one system that is good for every situation. The order could be determined by _Speed_ **contests**, it could just evolve from the scene, characters could be divided into teams that alternate, or perhaps everyone could go at once. The characters can be sequenced through any method you like.
 
 ### Adding to the Game
 
-## Definitions
+Feel free to add items or rules to the game, it is intentionally kept simple for that reason - it requires story / setting based additions to come into its onw. Keep in mind that it is expected for specific rules to override general rules, so don't be afraid of that. Perhaps you want a gun that fires so fast its wielder effectively shoots twice in one action, or an enemy that can take a lot more hits than a usual character. Don't worry if these things go against the core rules, GMing would be much less fun if the players knew how everything worked.
+
+Adding equipment and roles (to effectively create your own implementation of ONLY HUMAN...)
+
+### Definitions
 
 Some words or phrases in the above rules are written in bold. This means that they have a particular definition within the game that is more specific than their general English definition. Whilst they are explained the first time they appear, their meaning is detailed again here for ease of reference.
 
-- **Stat**: Definition
-- **Skill**: Definition
-- **Role**: Definition
-- **Modifier**: Definition
+- **Stat**: One of the four numerical attributes that describe a character: Dexterity (abbreviated to `DEX`) which represents one's ability to quickly and precisely control their body, Intelligence (abbreviated to `INT`) which represents one's knowledge and problem solving ability, Strength (abbreviated to `STR`) which represents one's physical might, and Will (abbreviated to `WIL`) which represents one's determination, creativity, and wisdom.
+- **Skill**: Something that one can attempt to do or use, and which one may have varying degrees of proficiency with. In ONLY HUMAN these are associated with pairs of **stats** (though those **stats** can be the same) and together with the average of the points assigned to each **stat** and the points assigned to the stat itself, create a **modifier**.
+- **Role**: A particular specialisation that a character may be able to take to gain additional points to allocate to **stats** but that may only be allocated to particular **stats**.
+- **Modifier**: A numerical representation of a cha
 - **Difficulty**: Definition
 - **Test**: Definition
 - **Restricted**: Definition
