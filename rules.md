@@ -192,25 +192,3 @@ Whilst there is no strict limit on how much equipment a character can carry, it 
 It is possible to implement a rudimentary progression system in ONLY HUMAN. The simplest way would be to give players more points to allocate to **stats** and **skills**, and perhaps raising the cap on the maximum allocatable to each. If you plan on doing this, consider starting the characters initially with fewer points than the [character creation](#Character-Creation) section suggests, as increasing the available points too far beyond this point could leave min-maxed characters with very large **modifiers**.
 
 Another simple progression mechanism, that is perhaps more inline with the ethos of ONLY HUMAN, would be to provide players with better equipment, and better connections in the setting of the game.
-
-## Definitions
-
-Some words or phrases in the above rules are written in bold. This means that they have a particular definition within the game that is more specific than their general English definition. Whilst they are explained where they appear, their meaning is detailed again here for ease of reference.
-
-- **Stat**: One of the four numerical attributes that describe a character: Dexterity (abbreviated to `DEX`), Intelligence (abbreviated to `INT`), Strength (abbreviated to `STR`), and Will (abbreviated to `WIL`).
-- **Skill**: An aspect of a character that they can attempt to do or use, and with which one may have varying degrees of proficiency with. These are associated with pairs of **stats** (though those **stats** can be the same) and together with the average of the points assigned to each **stat** and the points assigned to the skill itself, they create a **modifier**.
-- **Role**: A particular specialisation that a character may be able to take to gain additional points which may only be allocated to only particular **stats**.
-- **Modifier**: A numerical representation of a character's proficiency with a **skill**. It is found by adding together the points the character has in the **stats** associated with the skill, then dividing this by two rounding down (this will just be the points associated with the **skill** if the **stat** is associated with the same **skill** twice), and then finally adding the points the character has in the **skill** itself to this value. If a **skill** is referred to as a number, the **modifer** for that **skill** is the number.
-- **Difficulty**: The numerical representation of the difficulty of a task for which a **test** is being taken. It is the number that the roll for the **test** plus the character's **modifier** must equal or exceed for the **test** to be successful.
-- **Test**: A die roll made to determine if a character can accomplish a task that has both a change of success and a chance of failure. Each test is associated with a **skill**, the person controlling the character taking the test rolls a d20 and adds the character's **modifier** in that **skill**. If this number equals or exceeds the **difficulty** of the test, as set by the GM, the character succeeds, otherwise, they fail.
-- **Restricted**: A state that a character can be in that means that they move with greater difficulty. The distance a character moves whilst restricted counts twice against the length of the path that their _Speed_ permits them to move.
-- **Action**: A task sufficiently complex that a **character** can only do one a turn. This includes, but is not limited to, **attacking**, **running**, **readying**, interacting substantially with an object, and attempting to **stabilise** a creature.
-- **Attacking**: An action undertaken by a character when attempting to harm another character.
-- **Running**: An action undertaken by a character to move further than normal. A character who takes this action may double the distance they are permitted to move in the current turn.
-- **Readying**: An action undertaken by a character to perform a different action when and if a particular trigger occurs before their next turn.
-- **Impact**: A measure of the extent to which an **attack** may hurt a target. It is equal to the amount by which the attacker exceeded the **difficulty** of their attacking check, minus the **absorption** of any armour the target is wearing. The **difficulty** of the test to determine if the target is injured is `15 + impact`.
-- **Absorption**: A measure of the effectiveness of armour. See above.
-- **Injured**: A thing that can happen to a character. When a character is injured they drop to a **health state** one below their current **health state**,.
-- **Health State**: A measure of the physical condition of a character.
-- **Unstable**: A state a character can be in that indicates that their **health state** may deteriorate. If a character is unstable for half an hour without their **health state** having changed, the person controlling the character rolls a d20. If the roll is an `11` or above they stabilise, otherwise they drop to the next lowest **health state**.
-- **Stable**: A state a character can be in that indicates that their **health state** will not currently deteriorate.
