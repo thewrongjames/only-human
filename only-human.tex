@@ -13,21 +13,25 @@
     urlcolor=blue,
 }
 
-\title{\vspace{-4ex}ONLY HUMAN 0.2.2\vspace{-6.5ex}}
+\title{\vspace{-4ex}ONLY HUMAN 0.3.0\vspace{-6.5ex}}
 \date{}
 
 \begin{document}\begin{multicols}{3}
   \maketitle
 
-  \begin{center}\LARGE Core Rules\end{center}
+  A simple tabletop RPG framework, for when you don't want superhuman characters. It requires a game master (GM) to run the world / non-player characters (NPCs), and at least $1$ player to run the player character(s) (PCs).
 
-  A simple tabletop RPG system, for when you don't want your characters to be super heroes. The game uses (only) d20s ($20$ sided dice), and is designed to be played with a game master (GM) to control the world and non-player characters (NPCs), and at least $2$ players to control the player characters (PCs). ONLY HUMAN is \textit{heavily} inspired by the \href{https://deadsimplerpg.wordpress.com/about/}{Dead Simple RPG} games, and is more or less a clone of \href{https://deadsimplerpg.wordpress.com/category/blaster-sf-rpg/}{Blaster}.
+  To play, everyone should have d20s and paper, pencils, and erases to record character details and notes. The GM should have a story, and details of relevant items, roles, and mechanics (see the Still Human section for examples).
 
-  \section*{Character Creation}
+  \section*{CORE RULES}
 
-  \subsection*{Attributes}
+  \subsection*{Character Creation}
 
-  Characters have $10$ points to divide between four \textbf{stats}: Dexterity (DEX), Intelligence (INT), Strength (STR), Spirit (SPT). Each stat must have between $1$ and $4$ points. Combinations of these \textbf{stats} result in \textbf{skills}.
+  Before the game, the players each create a character. To do so, they allocate $12$ points between four \textbf{stats}: Dexterity (DEX), Intelligence (INT), Strength (STR), and Will (WIL). Each \textbf{stat} may not be allocated more than $6$ points.
+
+  Players also allocate $16$ points to \textbf{skills}. The GM may provide the option to pick a \textbf{role}, which confers an additional $4$ points that must be allocated within a particular set of \textbf{skills}. No skill can be allocated more than $4$ points.
+
+  Each \textbf{skill} is associated with two \textbf{stats}. Below are some \textbf{skills}, but you can add other \textbf{skills} to the game, with the agreement of the GM and after associating the \textbf{skill} with a pair of \textbf{stats}.
 
   \begin{multicols}{2}
     DEX + DEX: ​\textit{Agility​},​ \textit{Sleight of hand}
@@ -51,55 +55,58 @@
     SPT + SPT: ​\textit{Persuasion}
   \end{multicols}
 
-  Characters can have other \textbf{skills}, pending agreement with the GM, and them being assigned to a pair of \textbf{stats}. Characters begin experienced in one skill, trained in two others, and familiar with two more (they are unfamiliar with everything else). The levels of \textbf{proficiency} confer modifiers. Unfamiliar confers $-1$, familiar $+0$, trained $+1$, and experienced $+2$.
-
-  \subsection*{A Bit of Character}
-
-  A couple of numbers shouldn't totally describe your character. Think about their personality, about what they want, what they need (but might not know they need), and how they know the other characters in the group.
-
-  \section*{Playing the Game}
+  Keep in mind that couple of numbers should not totally describe your character. Think about their personality, about what they want, what they need (but might not know they need), and how they know the other characters in the group. Have secrets for your character, but want them to be discovered.
 
   \subsection*{Tests}
 
-  When a character tries something that has a risk of failure and a chance of success, they take a \textbf{​test}​: their player (or the GM for NPCs) rolls a d20, adding the value of each of the ​\textbf{stats​} that correspond to the relevant \textbf{skill​} and the \textbf{​proficiency} modifier for that \textbf{​skill​} - this is the result of the \textbf{test}. The GM compares this result with a DC (difficulty class) that they have set based on the difficulty of the task at hand. If the result of the \textbf{test} is at least as high as the DC the \textbf{test} is a success, and otherwise it is a failure.
+  When a character tries something with a chance of both failure and success, the GM may have them take a \textbf{​test}​ in a \textbf{skill}: their controlling player (or the GM for NPCs) rolls a d20, adds the character's \textbf{modifier} in the \textbf{skill}, and the GM compares that to a \textbf{difficulty} they have set. If the \textbf{test} result is at least the \textbf{difficulty} then the \textbf{test} is a success, otherwise it is a failure.
+
+  To find the character's \textbf{skill} \textbf{modifier} add together their points in the associated \textbf{stats} and divide this by $2$ rounding down (giving the \textbf{stat's} points for \textbf{skills} associated with the same \textbf{stat} twice) then add their points in the \textbf{skill}. References to a \textbf{skill} in a numerical context refer to this \textbf{modifier}.
+
+  \subsection*{Contests}
+
+  \textbf{Contests} are special kinds of \textbf{tests} for when two or more characters are simultaneously attempting tasks that come into conflict. Each character takes a \textbf{test} in the \textbf{skill} relevant to the task they are attempting. The character(s) with the highest result succeeds, and all other characters fail (perhaps to varying degrees). The GM adjudicates the outcome of any ties.
 
   \subsection*{Turns}
 
-  When things get tense characters start taking turns. The turn order, and whether or not they overlap, is up to the GM. Everyone taking a turn represents about 10 seconds of time. During a turn, characters may move, and once per turn (possibly during that movement) they may take an ​\textbf{action​}. Characters may talk at any point during turns, but the GM should to ensure that they don’t communicate more than is reasonable in the amount of time that has elapsed.
+  When things get tense characters start taking turns. The turn order, and whether or not they overlap, is up to the GM. Everyone taking a turn represents about 10 seconds of time. During a turn, characters may move, and once per turn (possibly during that movement) they may take an ​\textbf{action​}. Characters may also talk at any point during turns, but the GM should ensure they don’t communicate more than is reasonable for the elapsed time.
+  
+  \textbf{Attacking}, \textbf{running}, \textbf{readying}, some object interactions, or trying to \textbf{stabalise} a character are all actions. As is anything else the GM deems to be.
+  
 
   \subsection*{Moving}
 
-  When characters make a move, they can move in a path of up to $10 + (2 \times Speed)$ metres, where \textit{Speed} is the modifier the character would add to a \textit{Speed} \textbf{test}. If a character is climbing, trying to move stealthily, wearing or carrying something bulky, or moving over difficult terrain, then they can only move in a path of up to $10 + Speed$ metres.
+  When characters move, they can move in a path of up to $10 + (2 \times Speed)$ metres. If a character is climbing, swimming, sneaking, carrying something bulky, moving over difficult ground, or otherwise slowed, then they are \textbf{restricted}. The distance a character moves whilst \textbf{restricted} counts twice against their movement.
 
   \subsection*{Actions}
 
-  Characters can spend their \textbf{action} making an attack, providing the target of their attack is within range of the weapon they are using, and there is nothing physically preventing the attack (such as a wall). If a character cannot see their target, they must declare where they are attacking, if there is nothing there their attack fails, but otherwise it continues as normal. To make an attack characters make the relevant of either a \textit{​Ranged attacking​} or a \textit{​Melee attacking​​}  \textbf{test​}, adding their weapon modifier to their result. The DC for this ​\textbf{test​} is $10 + target$ $DEX$, but light cover applies a $-2$ penalty, and heavy cover applies a $-4$ penalty.
+  To \textbf{attack}, a character must be within their weapon's range of their target, and there must be nothing fully blocking the \textbf{attack}. The attacker then makes the relevant of either a \textit{​Ranged attacking​} or a \textit{​Melee attacking​​}  \textbf{test​}, adding their weapon's modifier, and subtracting $2$ for ranged attacks if the attacker is within $2$ metres of the target. The \textbf{difficulty} for this ​\textbf{test​} is $10 + target\:DEX + cover$, where $cover$ is $4$ if the attacker can only see less than half of the target, and $0$ otherwise.
 
-  If the attacker fails this \textbf{test} nothing further happens and the \textbf{action} is complete. Otherwise, the attack has an \textbf{impact} of the amount they exceeded their attack \textbf{test} by (possibly zero), minus the absorption of any armour the target is wearing. The target must then take a \textit{Toughness} \textbf{test}, with a DC of $15 + impact$. If the target fails this \textbf{test} they are \textbf{injured} and become \textbf{unstable}. If they fail by a margin of $10$ or more they are \textbf{injured} twice.
+  If the attacker fails, nothing happens. Otherwise, the attack has an \textbf{impact} of the amount the \textbf{test} \textbf{difficulty} was exceeded, minus the absorption of any armour the target is wearing. The target then takes a \textbf{difficulty} $15 + impact$ \textit{Toughness} \textbf{test}. If they fail they get \textbf{injured} and become \textbf{unstable}. If they fail by $10$ to $14$ they get \textbf{injured} twice, if they fail by $15$ or more they get \textbf{injured} three times.
 
-  Attacks are not the only types of \textbf{action}, but many interactions are not substantial enough to take up an \textbf{action} (e.g. moving some paper files or opening an unlocked door). However, some interactions require enough time and mental investment to warrant the use of a whole action. Interactions that are worthy of an action include: attempting to \textbf{stabalise} a character, attempting to pick a lock, and attempting to spot whatever is moving out there in the darkness.
+  If a character \textbf{runs} they double the distance they are permitted to move in the current turn. If a character \textbf{readies} their player must specify a condition and an \textbf{action}. If the condition occurs before their next turn, their character immediately takes the action.
 
   \subsection*{Injury}
 
-  Characters have a health state, and are either \textbf{stable} or \textbf{unstable}. If a character is \textbf{injured} or they have been \textbf{unstable} in the same health state for more than half an hour, they drop to the next health state down the table. To begin with characters are assumed to be normal and \textbf{stable}. A successful \textit{Medicine} \textbf{test} of DC $10$ will \textbf{stabilise} a character, but true recovery from injuries can require days, or perhaps specialised equipment (at the discretion of the GM).
+  Characters have a \textbf{health state} and are either \textbf{stable} or \textbf{unstable}. If a character gets \textbf{injured} they drop to the next \textbf{health state} down the table. If they are \textbf{unstable} in the same \textbf{health state} for more than $30$ minutes, their player rolls d20. On an $11$ or higher they become \textbf{stable}, on a $10$ or lower they get \textbf{injured}. A successful \textbf{difficulty} $11$ \textit{Medicine} \textbf{test} will \textbf{stabilise} a character, but true recovery can require days or specialised equipment.
 
   \begin{tabularx}{\linewidth}{lX}
-    Health State & Effect \\
+    Health State & Effect on Character \\
     \hline
-    Normal & The character is feeling fine. \\
-    Wounded & The character is hurt, they suffer a $-2$ penalty to all \textbf{tests}. \\
-    Seriously Wounded & The character is \textit{really} hurt, they suffer a $-4$ penalty to all \textbf{tests} and all their movement is considered to be over difficult terrain. \\
-    Incapacitated & The character is unconscious (or effectively unconscious), they cannot voluntarily do anything and can easily be captured or killed. \\
-    Dead & The character is dead, Jim.
+    Normal & They're fine. Characters start \textbf{stable} in this state. \\
+    Wounded & They're hurt, they suffer a $-2$ penalty to all \textbf{tests}. \\
+    Seriously Wounded & They're \textit{really} hurt, they suffer a $-4$ penalty to all \textbf{tests} and are \textbf{restricted}. \\
+    Incapacitated & They're (effectively) unconscious. They cannot voluntarily do anything. You do not add their DEX to the \textbf{difficulty} of \textbf{tests} to attack them. \\
+    Dead & They're dead, Jim.
   \end{tabularx}
 
-  \begin{center}\LARGE Still Human \end{center}
+  \section*{STILL HUMAN}
 
   A sci-fi expansion for ONLY HUMAN designed to work with teams of characters sent on missions in reasonably hard sci-fi near-ish future settings.
 
   This should not be the only style or setting that ONLY HUMAN is able to be played in, and hopefully this section also serves to provide an example of how this game can actually be implemented into something playable in general.
 
-  \section*{Equipment}
+  \subsection*{Equipment}
 
   \begin{tabularx}{\linewidth}{lX}
     Armour (Absorption) & Description / Effects \\
@@ -135,7 +142,7 @@
     Engineering Kit & A vacuum rated toolbox full of various equipment for dealing with the tech a space-faring engineer might expect to encounter. An engineering kit gives a $+2$ modifier to \textit{Technology} \textbf{tests} made to repair things. Additionally, the engineering kit contains $5$ patches that can be used to repair tears in space suits.
   \end{tabularx}
 
-  \section*{Team Building}
+  \subsection*{Team Building}
 
   Still Human provides two methods of building up the team of player characters. Selected roles, or requirements and requisitioning. Whilst these methods do provide equipment, it is generally assumed that everyone has normal clothes, a space suit, a short range communicator, and a pad. Still Human also adds a single \textbf{skill} to the game: \textit{Piloting}, a DEX + INT \textbf{skill}.
 
@@ -158,11 +165,11 @@
 
   An alternative is to come up with a list of required proficiencies for the group, e.g. "We need people experienced in piloting and investigation, and someone trained in both technology and slight of hand", and let the group work out how they will fill those niches together. Similarly, a pool of equipment can be provided, for the group to share out. This could lead to relations forming between the characters whilst they are being created.
 
-  \begin{center}\LARGE GM Tips \end{center}
+  \section{GM TIPS}
 
   To fit the core rules on one page ONLY HUMAN is necessarily rather rules light. This is very intentional, based around the idea that the fundamental core of an RPG (especially once you take away supernatural powers and progression) is incredibly simple. So, whilst the core game is playable with only the addition of a story and some equipment stats, this section provides some suggestions for how the GM could expand the game, and adjudicate complex situations.
 
-  \section*{Setting DCs}
+  \subsection*{Setting DCs}
 
   When setting DCs, generally keep in mind these difficulty levels:
 
@@ -181,7 +188,7 @@
 
   Remember, unless you are intentionally trying to hide the difficulty of a task, if a character attempts a task that is impossible to fail, or impossible to successfully complete, there is no need for a \textbf{test}, simply narrate the outcome to the players.
 
-  \section*{Adjudicating Complex Tasks}
+  \subsection*{Adjudicating Complex Tasks}
 
   ONLY HUMAN does not provide specific rules for adjudicating everything a player may wish to try. So, when dealing with non-standard tasks, attempt to find a way to distil them down into one or more core difficulties (parts of the task with a risk of failure and a chance of success) that can be related to \textbf{skills} (whether on the given \textbf{skills} table or not).
 
@@ -195,11 +202,11 @@
 
   Or perhaps if one character is searching for another character that is hiding the \textbf{contest} could be \textit{Investigation} against \textit{Stealth}.
 
-  \section*{Turns}
+  \subsection*{Turns}
 
   The core rules do not describe how the order of turns should be determined, and whether or not they can overlap. This should usually be decided on a case by case basis, as there is no one system that is good for every situation. It can be determined by \textit{​Speed} \textbf{contests}, it can just evolve from the scene, characters can be divided into teams that alternate, everyone can go at once, or they can be sequenced through any other method of your own devising.
 
-  \section*{Adding to the Game}
+  \subsection*{Adding to the Game}
 
   You should feel totally free to add items or rules to the game, it is intentionally simple for that reason. Keep in mind that it is expected for specific rules to override general rules, so don't be afraid of that. Perhaps you want a gun that fires so fast it's wielder effectively shoots twice, or an enemy that can take a lot more hits than a usual character. Don't worry if these things go against the general stuff in the core rules, GMing would be much less fun if the players knew how everything worked. This sections details some example additions.
 
@@ -217,7 +224,7 @@
 
   When creating antagonists or enemies do not feel you need to stick to the options available to the player. You may want grunt alien enemies that drop dead on a single \textit{Toughness} \textbf{test} failure, or a villain antagonist so drugged up on stimulants that they are much harder to take down. You may want characters that have better or worse stats than the standard player character creation allows. Go for it.
 
-  \section*{Character Equipment}
+  \subsection*{Character Equipment}
 
   Whilst there is no strict limit on how much equipment a character can carry, it is best to be realistic. If you think a player character is carrying too much, perhaps get the player to label where everything is on their character's body. You could also apply strict carry weight rules, such as $40 + 10 \times Athletics$ kilograms of equipment, where \textit{Athletics} is the modifier they would apply to an \textit{Athletics} \textbf{test}. If you wanted to be even more granular you could add that if a character is carrying more than $40 + 5 \times Athletics$ all their movement counts as moving in difficult terrain.
 

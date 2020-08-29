@@ -18,7 +18,7 @@ Before playing each player and the GM should have access to at least one d20 (d2
 
 Before playing the game, the players each create a character. When doing so, players must allocate `12` points between the four **stats** that characters have: Dexterity (`DEX`), Intelligence (`INT`), Strength(`STR`), and Will (`WIL`). Each stat may be allocated at most `6` points.
 
-Players must additionally allocate `16` points between **skills**. The GM may also provide you with the option to pick a **role**, which will confer an additional `4` points that must be allocated to a particular set of **skills**. No skill can be allocated more than `4` points.
+Players must additionally allocate `16` points between **skills**. The GM may also provide you with the option to pick a **role**, which will confer an additional `4` points that must be allocated within particular set of **skills**. No skill can be allocated more than `4` points.
 
 Each **skill** is associated with two **stats**. The list below details some examples of **skills**, but it is not exhaustive: you can add any number of other **skills** to the game pending only the agreement of the GM, and the association of the **skill** with a pair of **stats**.
 
@@ -37,23 +37,21 @@ The points allocated to **stats** and **skills** are used to create modifiers th
 
 Keep in mind that these numbers should not completely describe your character. Think about their personality, what they want, what they need (but might not know they need), and how they know the other characters in the group. Have secrets for your character, but want them to be discovered.
 
-## Playing the Game
-
-### Tests
+## Tests
 
 When a character tries something that has a risk of failure, and a chance of success, the GM must adjudicate the outcome. A common way to do so is to have the character take a **test**. A **test** must always be associated with a **skill**, which in turn must always be associated with two **stats**. The controlling player of the character in question, or the GM for NPCs, rolls a d20 and adds the character's **modifier** in the **skill**.
 
-To find a character's **skill** **modifier** add together their points in the associated **stats** and then divide this by `2` rounding the result down (this is just the value of the **stat** if the **skill** is associated with the same **stat** twice), and then add their points in the associated skill to this value. When these rules reference a **skill** in a numerical context, they are referring to this **modifier**.
+To find a character's **skill** **modifier** add together their points in the associated **stats** and then divide this by `2` rounding the result down (this is just the value of the **stat** if the **skill** is associated with the same **stat** twice), and then add their points in the associated **skill** to this value. When these rules reference a **skill** in a numerical context, they are referring to this **modifier**.
 
 For every **test** taken the GM should choose a **difficulty** that corresponds to the challenge of the task at hand, with a higher **difficulty** indicating a harder to complete task. The [GM Guide](#GM-Guide) provides advice on [setting difficulties](#Setting-Difficulties).
 
 If the result of the **test** is at least as high as the **difficulty** then the **test** is a success, otherwise it is a failure.
 
-### Contests
+## Contests
 
 **Contests** are a special kind of **test** for when two or more characters are simultaneously attempting tasks that come into conflict. In a **contest** the conflicting characters each take a **test** in the **skill** relevant to the task they are attempting. The character(s) with the highest result succeeds, and all the other characters (perhaps to varying degrees) fail. The GM adjudicates the outcome of any ties.
 
-### Turns
+## Turns
 
 When things get tense characters start taking turns. The turn order, and whether or not they overlap, is up to the GM. Everyone taking a turn represents about `10` seconds of time.
 
@@ -61,29 +59,29 @@ During a turn, characters may move, and once per turn (possibly during that move
 
 Characters may talk at any point during turns, but the GM should ensure that they don’t communicate more than is reasonable in the amount of time that has elapsed.
 
-### Moving
+## Moving
 
 When characters make a move, they can move in a path of up to `10 + (2 × Speed)` metres in length. If a character is climbing, swimming, trying to move stealthily, wearing or carrying something bulky, or moving over difficult terrain, then they are considered to be **restricted**. The distance a character moves whilst **restricted** counts twice against their movement.
 
-### Attacking
+## Attacking
 
-A character may spend their **action** making an attack, providing the target of their attack is within range of the weapon they are using, and there is nothing physically preventing the attack (such as a wall). If a character cannot see their target, they must declare where they are attacking, if there is nothing there their attack fails, but otherwise it continues as normal. To make an attack characters make the relevant of either a _​Ranged attacking​_ or a _​Melee attacking​​_ **test**, adding their weapon modifier to their result. The modifier of a ranged weapon is reduced by `2` if the attacker is within `2 metres` of the target. The **difficulty** for this **test** is `10 + target DEX + cover`, where `cover` is `3` if half or more of the target is obscured from the attacker and `6` if more than three quarters of the target is obscured from the attacker.
+A character may spend their **action** making an attack, providing the target of their attack is within range of the weapon they are using, and there is nothing physically preventing the attack (such as a wall). If a character cannot see their target, they must declare where they are attacking, if there is nothing there their attack fails, but otherwise it continues as normal. To make an attack characters make the relevant of either a _​Ranged attacking​_ or a _​Melee attacking​​_ **test**, adding their weapon modifier to their result. The modifier of a ranged weapon is reduced by `2` if the attacker is within `2 metres` of the target. The **difficulty** for this **test** is `10 + target DEX + cover`, where `cover` is `4` if the attacker can only see less than half of the target, and `0` otherwise.
 
-If the attacker fails this **test** nothing further happens and the **action** is complete. Otherwise, the attack has an **impact** of the amount they exceeded their attack **test** by (possibly zero), minus the **absorption** of any armour the target is wearing. The target must then take a _Toughness_ **test**, with a **difficulty** of `15 + impact`. If the target fails this **test** they are **injured** and become **unstable**. If they fail by a margin of `10` or more they are **injured** twice, and if they fail by `15` or more they are injured three times.
+If the attacker fails this **test** nothing further happens and the **action** is complete. Otherwise, the attack has an **impact** of the amount they exceeded their attack **test** by (possibly zero), minus the **absorption** of any armour the target is wearing. The target must then take a _Toughness_ **test**, with a **difficulty** of `15 + impact`. If the target fails this **test** they get **injured** and become **unstable**. If they fail by a margin of `10` or more they get **injured** twice, and if they fail by `15` or more they get **injured** three times.
 
-### Running
+## Running
 
 If a character uses their action to **run** they may double the distance they are permitted to move in the current turn.
 
-### Readying
+## Readying
 
 If a character uses their action to **ready** they must specify a condition and an **action** that their character could make - in sufficient detail to satisfy the GM. If the specified condition occurs before they next take a turn, their character immediately takes the specified action.
 
-### Injury
+## Injury
 
 Characters have a **health state**, and are either **stable** or **unstable**. To begin with most characters are assumed to be **stable** in a normal **health state**.
 
-If a character gets **injured** they drop to the next health state down the table. If they have been **unstable** in the same health state for more than half an hour, their player (or the GM for NPCs) rolls an unmodified d20. If the roll is an `11` or higher the character becomes **stable**, otherwise they drop to the next health state down the table.
+If a character gets **injured** they drop to the next health state down the table. If they have been **unstable** in the same health state for more than half an hour, their player (or the GM for NPCs) rolls an unmodified d20. If the roll is an `11` or higher the character becomes **stable**, otherwise get **injured**
 
 A successful _Medicine_ test of **difficulty** `11` will **stabilise** a character, but true recovery can require days, or perhaps specialised equipment (at the discretion of the GM).
 
