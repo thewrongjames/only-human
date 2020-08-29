@@ -6,12 +6,15 @@
 \usepackage{parskip}
 \usepackage{tabularx}
 \usepackage{hyperref}
+\usepackage{makecell}
 
 \setmainfont{Economica}
 \hypersetup{
     colorlinks=true,
     urlcolor=blue,
 }
+
+\renewcommand{\cellalign}{l}
 
 \title{\vspace{-4ex}ONLY HUMAN 0.3.0\vspace{-6.5ex}}
 \date{}
@@ -102,9 +105,9 @@
 
   \section*{STILL HUMAN}
 
-  A sci-fi expansion for ONLY HUMAN designed to work with teams of characters sent on missions in reasonably hard sci-fi near-ish future settings.
+  Still Human is a sci-fi implementation of the ONLY HUMAN framework, that is, it provides statistics for items, \textbf{roles}, and a hint of a setting. Other implementations should be possible, but they are up to you to create.
 
-  This should not be the only style or setting that ONLY HUMAN is able to be played in, and hopefully this section also serves to provide an example of how this game can actually be implemented into something playable in general.
+  Still Human is designed to run games for teams of highly trained or experienced characters that are sent on, or somehow end up entangled in, various missions in reasonably hard sci-fi near-ish future settings.
 
   \subsection*{Equipment}
 
@@ -112,43 +115,44 @@
     Armour (Absorption) & Description / Effects \\
     \hline
     Normal Clothes (0) & Stylish \textit{and} practical. \\
-    Space Suit (1) & A surprisingly compact vacuum rated environmental suit good for $2$ hours of exposure, with oxygen tanks that can be refilled whenever it is back in atmosphere. If the suit absorbs any damage it is torn, and must be repaired before it will be vacuum worthy. All movement whilst wearing a space suit is effectively through difficult terrain. \\
-    Reinforced Space Suit (2) & A military grade space suit. The same as a space suit, except it is only torn if its wearer is hit with an attack and it cannot absorb all the \textbf{impact} \\
-    Combat Armour (2) & Tactical body armour. \\
-    Combat Carapace (3) & Heavy duty body armour. All movement whilst wearing combat carapace is effectively through difficult terrain.
+    Space Suit (2) & A surprisingly compact vacuum rated environmental suit good for $2$ hours of exposure, with oxygen tanks that can be refilled whenever it is back in atmosphere. If the suit absorbs any damage it is torn, and must be repaired before it will be vacuum worthy. All movement whilst wearing a space suit is effectively through difficult terrain. \\
+    Reinforced Space Suit (3) & A military grade space suit. The same as a space suit, except it is only torn if its wearer is hit with an attack and it cannot absorb all the \textbf{impact} \\
+    Combat Armour (3) & Tactical body armour. \\
+    Combat Carapace (4) & Heavy duty body armour. All movement whilst wearing combat carapace is effectively through difficult terrain.
   \end{tabularx}
 
   \begin{tabularx}{\linewidth}{lXX}
     Weapon (Type) & Range & Modifier \\
     \hline
-    Improvised Weapon (Melee) & $2m$ & $-2$ \\
+    Combat Knife (Melee) & $2m$ & $+1$ \\
+    Improvised Weapon (Melee) & $2m$ & $-1$ \\
     Shock Rod (Melee) & $2m$ & $+2$ \\
-    Combat Knife (Melee) & $1m$ & $+1$ \\
-    Auto Pistol (Ranged) & $50m$ & $+1$ \\
     Assault Rifle (Ranged) & $400m$ & $+3$ \\
-    Improvised Weapon (Ranged) & $10m$ & $-4$ \\
-    Combat Knife (Ranged) & $10m$ & $+0$
+    Auto Pistol (Ranged) & $50m$ & $+1$ \\
+    Combat Knife (Ranged) & $10m$ & $+0$ \\
+    Improvised Weapon (Ranged) & $10m$ & $-4$
   \end{tabularx}
 
   \begin{tabularx}{\linewidth}{lX}
     Other Items & Description / Effects \\
     \hline
-    Short Range Communicator & A small radio device. Provides encrypted communication with other short range communicators configured to allow it within 20km. \\
-    Long Range Communicator & A backpack sized radio device that provides encrypted communication to any equipment configured to receive it within 40,000km. \\
+    \makecell[t]{Short Range\\Communicator} & A small radio device. Provides encrypted communication with selected short range communicators configured to receive it within $20km$. \\
+    \makecell[t]{Long Range\\Communicator} & A backpack sized radio device that provides encrypted communication to selected equipment configured to receive it within $40,000km$. \\
     Pad & A smartphone sized, portable, touch screen computer. \\
     Navigator & A small attachment to a pad that uses known maps, available satellite data, and computer vision to attempt to inform the user of their position at all times. \\
     Scanner & A small attachment to a pad that allows various kinds of scanning. Where relevant, a scanner gives a $+2$ modifier to \textit{Investigation} \textbf{tests}. \\
-    Medical Kit & A brief-case sized box containing various medical supplies. Where relevant, a medical kit gives a $+2$ modifier to \textit{Medicine} \textbf{tests}. Additionally, the medical kit contains $5$ stim-shots, that can be used to rouse an unconscious character to the seriously wounded health state, and a single charge defibrillator that can be used to revive a dead character that has died in the last minute from causes that would be resolved by restarting their heart. \\
-    Engineering Kit & A vacuum rated toolbox full of various equipment for dealing with the tech a space-faring engineer might expect to encounter. An engineering kit gives a $+2$ modifier to \textit{Technology} \textbf{tests} made to repair things. Additionally, the engineering kit contains $5$ patches that can be used to repair tears in space suits.
+    Medical Kit & A brief-case sized box containing various medical supplies. Where relevant, a medical kit gives a $+2$ modifier to \textit{Medicine} \textbf{tests}. Additionally, the medical kit contains $5$ stim-shots, that can be used to rouse an unconscious character to the seriously wounded \textbf{health state}, and a defibrillator that can be used to revive a dead character to the seriously wounded \textbf{health state} if they died in the last minute from causes that would be resolved by restarting their heart. The defibrillator has $5$ uses per charge. Use of both the stim-shots and the defibrillator require a successful \textbf{stabilisation} \textbf{test}, if the \textbf{test} is failed they are still used, but have no effect. \\
+    Engineering Kit & A vacuum rated toolbox full of various equipment for dealing with the tech a space-faring engineer might expect to encounter. Where relevant, an engineering kit gives a $+2$ modifier to \textit{Technology} \textbf{tests}. Additionally, the engineering kit contains $5$ patches that can be used to repair tears in space suits.
   \end{tabularx}
 
-  \subsection*{Team Building}
-
-  Still Human provides two methods of building up the team of player characters. Selected roles, or requirements and requisitioning. Whilst these methods do provide equipment, it is generally assumed that everyone has normal clothes, a space suit, a short range communicator, and a pad. Still Human also adds a single \textbf{skill} to the game: \textit{Piloting}, a DEX + INT \textbf{skill}.
+  \vfill\null
+  \columnbreak
 
   \subsection*{Roles}
 
-  In this method, every character can have a specialisation, or role. The below table provides some examples of rules. Characters in a role gain all of the equipment in the equipment column, and may either take experience in one of the \textbf{skills} in the \textbf{proficiencies} column, or training in two of them (in addition to their base \textbf{proficiencies}).
+  In additional to the benefits of \textbf{roles} outlined in the character creation section of the basic rules, with the agreement of the GM a character that selects one of the follwoing roles may also take the corresponding piece(s) of equipment, and all characters may take Normal Clothes, a Space Suit, a Short Range Communicator, a Pad, and their choice of either a combat knife or an Auto Pistol.
+
+  Still Human also adds the \textit{Piloting} \textbf{skill} to a game. It is a DEX + INT \textbf{skill}, and is used in one of the following roles.
 
   \begin{tabularx}{\linewidth}{lXX}
     Role & Proficiencies & Equipment \\
@@ -163,11 +167,11 @@
 
   \subsection*{Requirements and Requisitioning}
 
-  An alternative is to come up with a list of required proficiencies for the group, e.g. "We need people experienced in piloting and investigation, and someone trained in both technology and slight of hand", and let the group work out how they will fill those niches together. Similarly, a pool of equipment can be provided, for the group to share out. This could lead to relations forming between the characters whilst they are being created.
+  An alternative to roles is to come up with a list of required proficiencies for the group, e.g. "We need people experienced in piloting and investigation, and someone trained in both technology and slight of hand", and let the group work out how they will fill those niches together. Similarly, a pool of equipment can be provided, for the group to share out. This could lead to relations forming between the characters whilst they are being created.
 
-  \section{GM TIPS}
+  \section*{GM TIPS}
 
-  To fit the core rules on one page ONLY HUMAN is necessarily rather rules light. This is very intentional, based around the idea that the fundamental core of an RPG (especially once you take away supernatural powers and progression) is incredibly simple. So, whilst the core game is playable with only the addition of a story and some equipment stats, this section provides some suggestions for how the GM could expand the game, and adjudicate complex situations.
+  ONLY HUMAN is rather rules light. This is quite intentional, and is based on the idea that the fundamental core of an RPG is incredibly simple, and can benefit from being more exposed for GMs to tinker with. However, this power does also come with responsibility. Hence, this sections exists to provide various tips to try to help GMs out.
 
   \subsection*{Setting DCs}
 
@@ -186,39 +190,17 @@
     \end{tabular}
   \end{center}
 
-  Remember, unless you are intentionally trying to hide the difficulty of a task, if a character attempts a task that is impossible to fail, or impossible to successfully complete, there is no need for a \textbf{test}, simply narrate the outcome to the players.
-
-  \subsection*{Adjudicating Complex Tasks}
-
-  ONLY HUMAN does not provide specific rules for adjudicating everything a player may wish to try. So, when dealing with non-standard tasks, attempt to find a way to distil them down into one or more core difficulties (parts of the task with a risk of failure and a chance of success) that can be related to \textbf{skills} (whether on the given \textbf{skills} table or not).
-
-  Once you know what \textbf{skills} are involved, try to gauge the difficulty of these components of the task, work out if they happen in an order or at the same time, and work out what success or failure for individual parts or combinations of individual parts looks like. Finally, with these ideas in mind, have the character take \textbf{tests} based on the established skills and difficulties, in the established order, and with the established outcomes.
-
-  \subsection*{Contests}
-
-  Sometimes two or more characters will be simultaneously attempting tasks that come into conflict. A \textbf{contest} can be used to determine the outcome of such a situation. In a \textbf{contest}, the conflicting characters take a \textbf{test} in the \textbf{skill} relevant to what they are doing. The character with the higher result succeeds, and all other characters fail (perhaps to varying degrees).
-
-  For example, if one character wanted to restrain another, preventing them from moving or taking actions, perhaps they could both enter into a \textbf{contest}, with the grappler taking an \textit{Athletics} \textbf{test}, and the grapplee taking a \textit{Athletics} or \textit{Agility} \textbf{test}, depending on how they try to resist.
-
-  Or perhaps if one character is searching for another character that is hiding the \textbf{contest} could be \textit{Investigation} against \textit{Stealth}.
+  Unless you are intentionally trying to hide the difficulty of a task, if a character attempts a task that is impossible to fail, or impossible to successfully complete, there is no need for a \textbf{test}, simply narrate the outcome to the players.
 
   \subsection*{Turns}
 
-  The core rules do not describe how the order of turns should be determined, and whether or not they can overlap. This should usually be decided on a case by case basis, as there is no one system that is good for every situation. It can be determined by \textit{​Speed} \textbf{contests}, it can just evolve from the scene, characters can be divided into teams that alternate, everyone can go at once, or they can be sequenced through any other method of your own devising.
+  ONLY HUMAN does not prescribe a method for determining the order of turns, whether there even is an order to turns, and whether or not turns can overlap. This should generally be decided on a case by cases basis, as there is no one system that is good for every situation. The order could be determined by \textit{Speed} \textbf{contests}, it could just evolve from the scene, characters could be divided into teams that alternate, or perhaps everyone could go at once. The characters can be sequenced through any method you like.
 
   \subsection*{Adding to the Game}
 
   You should feel totally free to add items or rules to the game, it is intentionally simple for that reason. Keep in mind that it is expected for specific rules to override general rules, so don't be afraid of that. Perhaps you want a gun that fires so fast it's wielder effectively shoots twice, or an enemy that can take a lot more hits than a usual character. Don't worry if these things go against the general stuff in the core rules, GMing would be much less fun if the players knew how everything worked. This sections details some example additions.
 
-  \subsection*{Custom Rules}
-
-  You could add to the game the concept of status, a more general version of medical state (perhaps even making medical states types of status). Conditions that can effect characters in certain ways, perhaps given by items or as the effect of being attacked by a weapon. Maybe characters can be temporarily paralysed, charmed, invigorated, or exhausted. Maybe this changes their movement, their abilities to take certain actions, or provides another path to death.
-
-  Additionally you could add other specific uses of \textbf{actions}, such as dashing: making a second move in a turn.
-
-  \subsection*{Custom Equipment}
-
-  Adding additional equipment is also an option, perhaps equipment that varies in more ways than the basic stats allow. Maybe you add a shotgun that can hit everything in a cone up to $10$ metres with a $+4$ or one target with a $+0$ out to $30$ metres.
+  Adding equipment and roles (to effectively create your own implementation of ONLY HUMAN) it another great way to extend the game. Consider adding items or features that vary in more ways than the basic rules allow, such as a shotgun that can hit everything in a cone up to $10$ metres with a $+4$ or one target with a $+1$ out to $30$ metres.
 
   \subsection*{Antagonists and Enemies}
 
@@ -226,6 +208,24 @@
 
   \subsection*{Character Equipment}
 
-  Whilst there is no strict limit on how much equipment a character can carry, it is best to be realistic. If you think a player character is carrying too much, perhaps get the player to label where everything is on their character's body. You could also apply strict carry weight rules, such as $40 + 10 \times Athletics$ kilograms of equipment, where \textit{Athletics} is the modifier they would apply to an \textit{Athletics} \textbf{test}. If you wanted to be even more granular you could add that if a character is carrying more than $40 + 5 \times Athletics$ all their movement counts as moving in difficult terrain.
+  Whilst there is no strict limit on how much equipment a character can carry, it is best to be realistic. If you think a PC is carrying too much, perhaps get the player to label where everything is on their character's body. You could also apply strict carry weight limits, such as $40 + 10 \times Athletics$ kilograms of equipment. If you wanted to be even more granular you could specify that a character carrying more than $40 + 5 \times Athletics$ is \textbf{restricted}.
+
+  \subsection*{Adjudicating Complex Tasks}
+
+  ONLY HUMAN does not provide specific rules for adjudicating everything a player may wish to try. So, when dealing with non-standard tasks, attempt to find a way to distil them down into one or more core difficulties (parts of the task with a risk of failure and a chance of success) that can be related to \textbf{skills} (whether on the given \textbf{skills} table or not).
+
+  Once you know what \textbf{skills} are involved, try to gauge the difficulty of these components of the task, work out if they happen in an order or at the same time, and work out what success or failure for individual parts or combinations of individual parts looks like. Finally, with these ideas in mind, have the character take \textbf{tests} based on the established skills and difficulties, in the established order, and provide the established outcomes.
+
+  In practice, this does not need to be dealt with remotely as formally every time, but that structure forms guidelines for one way to react to players attempting complicated tasks.
+
+  \subsection*{Contests}
+
+  Be creative with your use of \textbf{contests}, they are not just for arm wrestles. Perhaps one character searching for another could be represented by a \textit{Investigation}/\textit{Stealth} \textbf{contest}, or one character trying to stop another from twisting out of their grip could be an \textit{Athletics}/\textit{Agility} \textbf{contest}.
+
+  \subsection*{Progression}
+
+  It is possible to implement a rudimentary progression system in ONLY HUMAN. The simplest way would be to give players more points to allocate to stats and skills, and perhaps raising the cap on the maximum allocatable to each. If you plan on doing this, consider starting the characters initially with fewer points than the character creation section suggests, as increasing the available points too far beyond this point could leave min-maxed characters with very large \textbf{modifiers}.
+
+  Another simple progression mechanism, that is perhaps more inline with the ethos of ONLY HUMAN, would be to provide players with better equipment, and better connections in the setting of the game.
 
 \end{multicols}\end{document}

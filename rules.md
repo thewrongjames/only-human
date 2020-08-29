@@ -128,8 +128,8 @@ This should not be the only implementation, style, or setting that ONLY HUMAN is
 | Pad | A smartphone sized, portable, touch screen computer. |
 | Navigator | A small attachment to a pad that uses known maps, available satellite data, and computer vision to attempt to inform the user of their position at all times. |
 | Scanner | A small attachment to a pad that allows various kinds of scanning. Where relevant, a scanner gives a `+2` modifier to _Investigation_ **tests**. |
-| Medical Kit | A brief-case sized box containing various medical supplies. Where relevant, a medical kit gives a `+2` modifier to _Medicine_ **tests**. Additionally, the medical kit contains `5` stim-shots, that can be used to rouse an unconscious character to the seriously wounded **health state**, and a defibrillator that can be used to revive a dead character to the seriously wounded **health state** if they died in the last minute from causes that can be resolved by restarting their heart. The defibrillator has `5` uses per charge. |
-| Engineering Kit | A vacuum rated toolbox full of various equipment for dealing with the tech a space-faring engineer might expect to encounter. Where relevant, an engineering kit gives a `+2` modifier to _Technology_ **tests**. Additionally, the engineering kit contains 5 patches that can be used to repair tears in space suits. |
+| Medical Kit | A brief-case sized box containing various medical supplies. Where relevant, a medical kit gives a `+2` modifier to _Medicine_ **tests**. Additionally, the medical kit contains `5` stim-shots, that can be used to rouse an unconscious character to the seriously wounded **health state**, and a defibrillator that can be used to revive a dead character to the seriously wounded **health state** if they died in the last minute from causes that can be resolved by restarting their heart. The defibrillator has `5` uses per charge. Use of both the stim-shots and the defibrillator require a successful **stabilisation** **test**, if the **test** is failed they are still used, but have no effect. |
+| Engineering Kit | A vacuum rated toolbox full of various equipment for dealing with the tech a space-faring engineer might expect to encounter. Where relevant, an engineering kit gives a `+2` modifier to _Technology_ **tests**. Additionally, the engineering kit contains `5` patches that can be used to repair tears in space suits. |
 
 ## Roles
 
@@ -143,6 +143,10 @@ Still Human adds one additional **skill** to the game: _Piloting_, a `DEX` + `IN
 | Engineering | _Slight of hand_, _Piloting_, _Technology_ | Engineering Kit |
 | Medical | _Slight of hand_, _Medicine_ | Medical Kit |
 | Science | _Technology_, _Investigation_ | Scanner |
+
+## Requirements and Requisitioning
+
+An alternative to roles is to come up with a list of required proficiencies for the group, e.g. "We need people experienced in piloting and investigation, and someone trained in both technology and slight of hand", and let the group work out how they will fill those niches together. Similarly, a pool of equipment can be provided, for the group to share out. This could lead to relations forming between the characters whilst they are being created.
 
 # GM Guide
 
@@ -169,7 +173,7 @@ ONLY HUMAN does not provide specific rules for adjudicating everything a player 
 
 Once you know what **skills** are involved, try to gauge the difficulty of these components of the task, work out if they happen in an order or at the same time, and work out what success or failure for individual parts or combinations of individual parts looks like. Finally, with these ideas in mind, have the character take **tests** based on the established skills and difficulties, in the established order, and provide the established outcomes.
 
-In practice, this does not need to be dealt with remotely as formally, but that structure forms a guideline of one way to react to players attempting complicated tasks.
+In practice, this does not need to be dealt with remotely as formally, but that structure forms guidelines for one way to react to players attempting complicated tasks.
 
 ## Turns
 
@@ -177,13 +181,15 @@ ONLY HUMAN does not prescribe a method for determining the order of turns, wheth
 
 ## Adding to the Game
 
-Feel free to add items or rules to the game, it is intentionally kept simple for that reason - it requires story / setting based additions to come into its onw. Keep in mind that it is expected for specific rules to override general rules, so don't be afraid of that. Perhaps you want a gun that fires so fast its wielder effectively shoots twice in one action, or an enemy that can take a lot more hits than a usual character. Don't worry if these things go against the core rules, GMing would be much less fun if the players knew how everything worked.
+Feel free to add items or rules to the game, it is intentionally kept simple for that reason - it requires story / setting based additions to come into its own. Keep in mind that it is expected for specific rules to override general rules, so don't be afraid of that. Perhaps you want a gun that fires so fast its wielder effectively shoots twice in one action, or an enemy that can take a lot more hits than a usual character. Don't worry if these things go against the core rules, GMing would be much less fun if the players knew how everything worked.
 
 Adding equipment and roles (to effectively create your own implementation of ONLY HUMAN) is another great way to extend the game. Consider adding items or features that vary in more ways than the basic rules allow, such as a shotgun that can git everything in a cone up to `10 metres` with a `+4` or one target out to `30 metres` with a `+1`.
 
+Additionally, when creating antagonists or enemies do not feel you need to stick to the options available to the player. You may want grunt alien enemies that drop dead on a single \textit{Toughness} \textbf{test} failure, or a villain antagonist so drugged up on stimulants that they are much harder to take down. You may want characters that have better or worse stats than the standard player character creation allows. Go for it.
+
 ## Character Equipment
 
-Whilst there is no strict limit on how much equipment a character can carry, it is best to be realistic. If you think a PC is carrying too much, perhaps ask the player to label where everything is on their character's body. You could also apply strict carry weight limits, such as `40 + 10 × Athletics`. If you wanted to be even more granular you could specify that a character carrying more than `40 + 10 × Athletics` is **restricted**.
+Whilst there is no strict limit on how much equipment a character can carry, it is best to be realistic. If you think a PC is carrying too much, perhaps ask the player to label where everything is on their character's body. You could also apply strict carry weight limits, such as `40 + 10 × Athletics` kilograms of equipment. If you wanted to be even more granular you could specify that a character carrying more than `40 + 5 × Athletics` is **restricted**.
 
 ## Progression
 
