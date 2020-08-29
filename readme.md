@@ -12,6 +12,8 @@ Fundamentally, what is needed for a role playing game is just a framework within
 
 At the moment there are a couple of parts to this repo. The LaTeX to compile into player-friendly rules is in `only-human.tex`. `rules.md` provides an unstyled (beyond markdown) documentation of the rules, that may be more extensive, in parts, than the LaTeX version, but will probably not print out as cleanly or as compactly.
 
+These two documents may not quite agree. If this is the case, I'm not going to tell you one is the source of truth. Pick whichever you like more.
+
 ## Compiling
 
 I recommend compiling the rules with `xelatex`, and you will need the font Economica installed.

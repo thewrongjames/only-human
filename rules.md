@@ -107,7 +107,7 @@ This should not be the only implementation, style, or setting that ONLY HUMAN is
 |:------ | ----------:|:--------------------- |
 | Normal Clothes | `0` | Stylish _and_ practical |
 | Space Suit | `2` | A surprisingly compact vacuum rated environmental suit. Two hot-swappable tanks (that passively re-fill in atmosphere) provide one hour of oxygen each. If the suit absorbs any damage it is torn, and must be repaired before it will be vacuum worthy. A character wearing a space suit is **restricted**. |
-| Reinforced Space Suit | `3` | A military grade space suit. The same as a space suit, except it is only torn if its wearer is hit with an attack and it cannot absorb all the **impact**. |
+| Reinforced Space Suit | `3` | A military grade space suit. The same as a space suit, except it is only torn if its wearer is hit with an attack that results in an **impact** greater than `0`. |
 | Combat Armour | `3` | Tactical body armour. |
 | Combat Carapace | `4` | Heavy duty body armour. A character wearing combat carapace is **restricted**. |
 
@@ -128,8 +128,8 @@ This should not be the only implementation, style, or setting that ONLY HUMAN is
 | Pad | A smartphone sized, portable, touch screen computer. |
 | Navigator | A small attachment to a pad that uses known maps, available satellite data, and computer vision to attempt to inform the user of their position at all times. |
 | Scanner | A small attachment to a pad that allows various kinds of scanning. Where relevant, a scanner gives a `+2` modifier to _Investigation_ **tests**. |
-| Medical Kit | A brief-case sized box containing various medical supplies. Where relevant, a medical kit gives a `+2` modifier to _Medicine_ **tests**. Additionally, the medical kit contains `5` stim-shots, that can be used to rouse an unconscious character to the seriously wounded **health state**, and a defibrillator that can be used to revive a dead character to the seriously wounded **health state** if they died in the last minute from causes that can be resolved by restarting their heart. The defibrillator has `5` uses per charge. Use of both the stim-shots and the defibrillator require a successful **stabilisation** **test**, if the **test** is failed they are still used, but have no effect. |
-| Engineering Kit | A vacuum rated toolbox full of various equipment for dealing with the tech a space-faring engineer might expect to encounter. Where relevant, an engineering kit gives a `+2` modifier to _Technology_ **tests**. Additionally, the engineering kit contains `5` patches that can be used to repair tears in space suits. |
+| Medical Kit | A brief-case sized box containing various medical supplies. Where relevant, a medical kit gives a `+2` modifier to _Medicine_ **tests**. Additionally, the medical kit contains `5` stim-shots, that can be used to rouse an unconscious character to the seriously wounded **health state**, and a defibrillator that can be used to revive a dead character to the seriously wounded **health state** if they died in the last minute from causes that can be resolved by restarting their heart. The defibrillator has `5` uses per charge. Use of both the stim-shots and the defibrillator require a successful **stabilisation** **action**, if the **test** is failed they are still used, but have no effect. |
+| Engineering Kit | A vacuum rated toolbox full of various equipment for dealing with the tech a space-faring engineer might expect to encounter. Where relevant, an engineering kit gives a `+2` modifier to _Technology_ **tests**. Additionally, the engineering kit contains `5` patches that can, as an **action**, be used to repair tears in space suits. |
 
 ## Roles
 
