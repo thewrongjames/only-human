@@ -18,4 +18,4 @@ These two documents may not quite agree. If this is the case, I'm not going to t
 
 I recommend compiling the rules with `xelatex`, and you will need the font Economica installed.
 
-Alternately, you could take the much easier route of just downloading the pdf from the [releases page](https://github.com/thewrongjames/only-human-releases).
+Alternately, you could take the much easier route of just downloading the pdf from the [releases page](https://github.com/thewrongjames/only-human/releases).
