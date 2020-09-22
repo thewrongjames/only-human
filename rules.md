@@ -1,5 +1,3 @@
-Version 0.3.0
-
 This file is designed to outline the rules of the game, without the styling that might appear in a more polished document.
 
 ONLY HUMAN is inspired by the [Dead Simple RPG](https://deadsimplerpg.wordpress.com/about/) games, particularly [Blaster](https://deadsimplerpg.wordpress.com/category/blaster-sf-rpg/).
