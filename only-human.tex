@@ -24,8 +24,7 @@
 
   A simple tabletop RPG framework, for when you don't want superhuman characters. It requires a game master (GM) to run the world / non-player characters (NPCs), and at least $1$ player to run the player character(s) (PCs).
 
-  To play, everyone should have d20s and paper, pencils, and erases to record character details and notes. The GM should have a story, and details of relevant items, roles, and mechanics (see the Still Human section for examples).
-
+  To play, everyone should have d20s ($20$ sided dice), paper, pencils, and erases to record character details and notes. The GM should have a story, and details of relevant items, roles, and mechanics they want in the game (see the Still Human section for some examples).
   \section*{CORE RULES}
 
   \subsection*{Character Creation}
@@ -83,7 +82,7 @@
 
   \subsection*{Actions}
 
-  To \textbf{attack}, a character must be within their weapon's range of their target, and there must be nothing fully blocking the \textbf{attack}. The attacker then makes the relevant of either a \textit{​Ranged attacking​} or a \textit{​Melee attacking​​}  \textbf{test​}, adding their weapon's modifier, and subtracting $2$ for ranged attacks if the attacker is within $2$ metres of the target. The \textbf{difficulty} for this ​\textbf{test​} is $10 + target\:DEX + cover$, where $cover$ is $4$ if the attacker can only see less than half of the target, and $0$ otherwise.
+  To \textbf{attack}, a character must know where they are attacking (if there is no target there the attack fails), be within their weapon's range of their target, and have nothing fully blocking their \textbf{attack}. The attacker then makes the relevant of either a \textit{​Ranged attacking​} or a \textit{​Melee attacking​​}  \textbf{test​}, adding their weapon's modifier. The \textbf{difficulty} for this ​\textbf{test​} is $10 + target\:DEX$. Increase the \textbf{difficulty} by $2$ for ranged attacks on targets within $2$ metres, and by $4$ if the attacker can see less than half of the target.
 
   If the attacker fails, nothing happens. Otherwise, the attack has an \textbf{impact} of the amount the \textbf{test} \textbf{difficulty} was exceeded by, minus the absorption of any armour the target is wearing. The target then takes a \textbf{difficulty} $15 + impact$ \textit{Toughness} \textbf{test}. If they fail they get \textbf{injured} and become \textbf{unstable}. If they fail by $10$ to $14$ they get \textbf{injured} twice, if they fail by $15$ or more they get \textbf{injured} three times.
 
@@ -115,7 +114,7 @@
     Armour (Absorption) & Description / Effects \\
     \hline
     Normal Clothes (0) & Stylish \textit{and} practical. \\
-    Space Suit (2) & A surprisingly compact vacuum rated environmental suit. Two hot-swappable tanks (that passively re-fill in atmosphere) provide one hour of oxygen each. If the suit absorbs any damage it is torn, and must be repaired before it will be vacuum worthy. A character wearing a space suit is \textbf{restricted} \\
+    Space Suit (2) & A surprisingly compact vacuum rated environmental suit. Two hot-swappable tanks (that passively re-fill in atmosphere) provide one hour of oxygen each. If the suit absorbs any damage it is torn, and must be repaired before it will be vacuum worthy. A character wearing a space suit is \textbf{restricted}. \\
     Reinforced Space Suit (3) & A military grade space suit. The same as a space suit, except it is only torn if its wearer is hit with an attack that results in an \textbf{impact} greater than $0$. \\
     Combat Armour (3) & Tactical body armour. \\
     Combat Carapace (4) & Heavy duty body armour. A character wearing combat carapace is \textbf{restricted}.
@@ -194,13 +193,13 @@
 
   \subsection*{Turns}
 
-  ONLY HUMAN does not prescribe a method for determining the order of turns, whether there even is an order to turns, and whether or not turns can overlap. This should generally be decided on a case by cases basis, as there is no one system that is good for every situation. The order could be determined by \textit{Speed} \textbf{contests}, it could just evolve from the scene, characters could be divided into teams that alternate, or perhaps everyone could go at once. The characters can be sequenced through any method you like.
+  ONLY HUMAN does not prescribe a method for determining the order of turns, whether there even is an order to turns, or whether or not turns can overlap. This should generally be decided on a case by cases basis, as there is no one system that is good for every situation. The order could be determined by \textit{Speed} \textbf{contests}, it could just evolve from the scene, characters could be divided into teams that alternate, or perhaps everyone could go at once. The characters can be sequenced through any method you like.
 
   \subsection*{Adding to the Game}
 
   You should feel totally free to add items or rules to the game, it is intentionally simple for that reason. Keep in mind that it is expected for specific rules to override general rules, so don't be afraid of that. Perhaps you want a gun that fires so fast it's wielder effectively shoots twice, or an enemy that can take a lot more hits than a usual character. Don't worry if these things go against the general stuff in the core rules, GMing would be much less fun if the players knew how everything worked. This sections details some example additions.
 
-  Adding equipment and roles (to effectively create your own implementation of ONLY HUMAN) it another great way to extend the game. Consider adding items or features that vary in more ways than the basic rules allow, such as a shotgun that can hit everything in a cone up to $10$ metres with a $+4$ or one target with a $+1$ out to $30$ metres.
+  Adding equipment and roles (to effectively create your own implementation of ONLY HUMAN) is another great way to extend the game. Consider adding items or features that vary in more ways than the basic rules allow, such as a shotgun that can hit everything in a cone up to $10$ metres with a $+4$ or one target with a $+1$ out to $30$ metres.
 
   \subsection*{Antagonists and Enemies}
 
