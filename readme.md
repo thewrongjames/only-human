@@ -21,3 +21,5 @@ The `design` folder also contains documents detailing design principles of vario
 ## Compiling
 
 I recommend compiling the rules with `xelatex`, and you will need the font Economica installed.
+
+`xelatex -halt-on-error only-human.tex`
