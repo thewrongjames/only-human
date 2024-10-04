@@ -49,12 +49,12 @@ The **skills** on this second list are simply examples of common things characte
 - `DEX` + `INT`: _Driving_, _Piloting_, _Riding_
 - `DEX` + `STR`: -
 - `DEX` + `WIL`: _Stealth_
-- `INT` + `INT`: _Arcana_, _Investigation_, Religion_, _Science_
+- `INT` + `INT`: _Arcana_, _Investigation_, _Science_, _Technology_
 - `INT` + `STR`: -
-- `INT` + `WIL`: _Insight_, _Nature_, _Performance_
+- `INT` + `WIL`: _Insight_, _Nature_, _Performance_, _Religion_
 - `STR` + `STR`: _Athletics_
 - `STR` + `WIL`: _Intimidation_
-- `WIL` + `WIL`: _Animal Handling_, _Ocultism_, _Persuasion_
+- `WIL` + `WIL`: _Animal Handling_, _Occultism_, _Persuasion_
 
 There are two important numbers associated with each of your character's **skills**, the **skill's** **modifier**, and the **skill's** **DC**. Each represent the same thing: how competent overall your character is with the **skill**. However they are used in different ways, a **modifier** is for when you are taking an action, and a **DC** is for when someone is taking an action against you. Both are explained in more detail in the [Tests](#tests) section below.
 
